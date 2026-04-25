@@ -2,35 +2,97 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Hamdhan Portfolio</title>
 
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<!-- CSS -->
 <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+<nav>
+    <h2>Hamdhan</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HEADER -->
 <header>
     <h1 class="fade-in">Hi, I'm Hamdhan</h1>
-    <p class="fade-in">Aspiring Software Developer</p>
+    <p class="fade">
+        <span id="typing"></span>
+    </p>
 </header>
 
+<!-- ABOUT -->
 <section>
     <h2>About Me</h2>
-    <p>I am a Software Engineering student (HND final stage) with experience in administration and sales, and a passion for building software solutions.</p>
+    <p>
+        I am a Software Engineering student (HND final stage) with experience in administration and sales, 
+        and a passion for building real-world software solutions.
+    </p>
 </section>
 
-<section>
+<!-- PROJECTS -->
+<section id="projects">
     <h2>Projects</h2>
-    <div class="card">Smart Warehouse System</div>
-    <div class="card">Web Application Project</div>
+
+    <div class="card">
+        <h3>Smart Warehouse System</h3>
+        <p>IoT-based inventory management solution</p>
+    </div>
+
+    <div class="card">
+        <h3>Web Application</h3>
+        <p>Dynamic system with database integration</p>
+    </div>
 </section>
 
-<section>
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Let's Connect</h2>
+
+    <div class="contact-container">
+
+        <a href="mailto:muhammedhhamdhan985@icloud.com" class="contact-btn">
+            <i class="fas fa-envelope"></i> Email
+        </a>
+
+        <a href="https://www.linkedin.com/in/muhammedh-hamdhan-811416322/" target="_blank" class="contact-btn">
+            <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+
+        <a href="https://github.com/Hamdhan-10" target="_blank" class="contact-btn">
+            <i class="fab fa-github"></i> GitHub
+        </a>
+
+        <a href="https://wa.me/94772994015" target="_blank" class="contact-btn">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+
+        <a href="tel:+94772994015" class="contact-btn">
+            <i class="fas fa-phone"></i> Call
+        </a>
+
+    </div>
 </section>
+
+<!-- SCRIPT -->
+<script src="script.js"></script>
 
 </body>
 </html>
