@@ -16,34 +16,35 @@ window.addEventListener("load", showSections);
 
 // TYPING ANIMATION
 const text = [
-    "Aspiring Software Developer",
-    "HND Software Engineering Student",
-    "Founder of RH Solutions",
-    "Passionate About Technology"
+    "Aspiring Software Developer ",
+    "HND Software Engineering Student ",
+    "Founder of RH Solutions ",
+    "Passionate About Technology "
 ];
 
 let index = 0;
 let charIndex = 0;
-let currentText = "";
 let isDeleting = false;
-
 function typeEffect() {
     currentText = text[index];
 
     if (!isDeleting) {
+        charIndex++;
         document.getElementById("typing").textContent =
-            currentText.substring(0, charIndex++);
+            currentText.substring(0, charIndex);
     } else {
+        charIndex--;
         document.getElementById("typing").textContent =
-            currentText.substring(0, charIndex--);
+            currentText.substring(0, charIndex);
     }
 
     let speed = isDeleting ? 50 : 100;
 
-    if (!isDeleting && charIndex === currentText.length) {
-        speed = 1500;
+    if(charIndex === currentText.length) {
         isDeleting = true;
-    } else if (isDeleting && charIndex === 0) {
+        speed = 1500;
+    } 
+    if(charIndex === 0 && isdeleting){
         isDeleting = false;
         index = (index + 1) % text.length;
     }

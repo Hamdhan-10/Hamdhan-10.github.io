@@ -14,6 +14,7 @@ nav {
     background: #020617;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 nav ul {
@@ -134,8 +135,40 @@ html {
     animation: fadeIn 2s forwards;
 }
 
+/* CV Button */
+.cv-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.cv-btn:hover {
+    background: white;
+}
+
 @keyframes fadeIn {
     to {
         opacity: 1;
+    }
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    nav ul li {
+        list-style: none;
     }
 }
