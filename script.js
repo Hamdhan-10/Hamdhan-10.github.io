@@ -13,8 +13,9 @@ function showSections() {
 window.addEventListener("scroll", showSections);
 window.addEventListener("load", showSections);
 
+
 // TYPING ANIMATION
-const text = [
+const texts = [
     "Aspiring Software Developer",
     "HND Software Engineering Student",
     "Founder of RH Solutions",
@@ -26,7 +27,7 @@ let charIndex = 0;
 let isDeleting = false;
 
 function typeEffect() {
-    let currentText = text[index];
+    let currentText = texts[index];
 
     if (!isDeleting) {
         charIndex++;
@@ -39,60 +40,22 @@ function typeEffect() {
 
     let speed = isDeleting ? 50 : 100;
 
-    // When full text is typed
+    // Pause when full text typed
     if (charIndex === currentText.length) {
         isDeleting = true;
-        speed = 1500; // pause before deleting
+        speed = 1500;
     }
 
-    // When text is fully deleted
+    // Move to next text
     if (charIndex === 0 && isDeleting) {
         isDeleting = false;
-        index = (index + 1) % text.length; // 🔥 move to next text
+        index = (index + 1) % texts.length;
     }
 
     setTimeout(typeEffect, speed);
 }
 
-document.addEventListener("DOMContentLoaded", typeEffect);// TYPING ANIMATION
-const text = [
-    "Aspiring Software Developer",
-    "HND Software Engineering Student",
-    "Founder of RH Solutions",
-    "Passionate About Technology"
-];
 
-let index = 0;
-let charIndex = 0;
-let isDeleting = false;
-
-function typeEffect() {
-    let currentText = text[index];
-
-    if (!isDeleting) {
-        charIndex++;
-    } else {
-        charIndex--;
-    }
-
-    document.getElementById("typing").textContent =
-        currentText.substring(0, charIndex);
-
-    let speed = isDeleting ? 50 : 100;
-
-    // When full text is typed
-    if (charIndex === currentText.length) {
-        isDeleting = true;
-        speed = 1500; // pause before deleting
-    }
-
-    // When text is fully deleted
-    if (charIndex === 0 && isDeleting) {
-        isDeleting = false;
-        index = (index + 1) % text.length; // 🔥 move to next text
-    }
-
-    setTimeout(typeEffect, speed);
-}
-
-document.addEventListener("DOMContentLoaded", typeEffect);
+document.addEventListener("DOMContentLoaded", () => {
+    typeEffect();
+});
