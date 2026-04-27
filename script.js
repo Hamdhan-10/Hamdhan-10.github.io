@@ -63,3 +63,11 @@ function typeEffect() {
 document.addEventListener("DOMContentLoaded", () => {
     typeEffect();
 });
+
+// mobile menu toggle
+const toggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-Links");
+
+toggle.addEventListener("click", () =>{
+    navLinks.classList.toggle("active");
+})
