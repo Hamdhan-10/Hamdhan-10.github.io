@@ -228,7 +228,7 @@ html {
 
     /*contact fix in mobile*/
     .contact-container {
-        display: flex;
+        
         flex-direction: column;
         align-items: center;
     }
