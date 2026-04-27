@@ -141,21 +141,7 @@ html {
     animation: fadeIn 2s forwards;
 }
 
-/* CV Button */
-.cv-btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #38bdf8;
-    color: black;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: 0.3s;
-}
 
-.cv-btn:hover {
-    background: white;
-}
 section{
     scroll-margin-top: 100px;
 }
