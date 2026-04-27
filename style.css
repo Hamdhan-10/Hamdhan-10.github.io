@@ -129,10 +129,11 @@ a:hover {
 
 /* CONTACT BUTTONS */
 .contact-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 15px;
-    margin: 20px auto;
+    margin-top: 20px;
 }
 
 .contact-btn {
@@ -147,7 +148,6 @@ a:hover {
     justify-content: center;
     gap: 8px;
     min-width: 140px;
-    text-align: center;
 }
 
 .contact-btn:hover {
