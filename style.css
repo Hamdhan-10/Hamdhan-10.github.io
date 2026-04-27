@@ -128,19 +128,7 @@ a:hover {
 }
 
 /* CONTACT BUTTONS */
-
-
-.contact-btn i {
-    margin-right: 8px;
-}
-
-/* SMOOTH SCROLL */
-html {
-    scroll-behavior: smooth;
-}
-
-/* FADE ANIMATION */
-.fade-in .contact-container {
+.contact-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -173,7 +161,15 @@ html {
 
 .contact-btn i {
     font-size: 18px;
-}{
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+/* FADE ANIMATION */
+.fade-in {
     opacity: 0;
     animation: fadeIn 2s forwards;
 }
