@@ -44,7 +44,7 @@ function typeEffect() {
         isDeleting = true;
         speed = 1500;
     } 
-    if(charIndex === 0 && isdeleting){
+    if(charIndex === 0 && isDeleting){
         isDeleting = false;
         index = (index + 1) % text.length;
     }
