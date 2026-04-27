@@ -1,6 +1,4 @@
-// ================================
 // SECTION SCROLL ANIMATION
-// ================================
 const sections = document.querySelectorAll("section");
 
 function showSections() {
@@ -16,9 +14,8 @@ window.addEventListener("scroll", showSections);
 window.addEventListener("load", showSections);
 
 
-// ================================
+
 // TYPING ANIMATION (FIXED)
-// ================================
 const texts = [
     "Aspiring Software Developer",
     "HND Software Engineering Student",
@@ -33,7 +30,7 @@ let isDeleting = false;
 function typeEffect() {
     const element = document.getElementById("typing");
 
-    // 🔴 Safety check
+    
     if (!element) return;
 
     let currentText = texts[index];
@@ -48,13 +45,12 @@ function typeEffect() {
 
     let speed = isDeleting ? 50 : 100;
 
-    // FULL TEXT REACHED
+    
     if (charIndex === currentText.length && !isDeleting) {
         isDeleting = true;
         speed = 1500;
     }
 
-    // TEXT FULLY DELETED
     else if (charIndex === 0 && isDeleting) {
         isDeleting = false;
         index++;
