@@ -181,40 +181,50 @@ html {
 }
 
  @media (max-width: 768px) { 
-    nav { 
-        flex-direction: row; 
-        justify-content: space-between; 
-        align-items: center; 
-    } 
+       nav {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
 
-    .menu-toggle { 
-        display: block; 
-    } 
+    .menu-toggle {
+        display: block;
+        z-index: 1001; /* 🔥 important */
+    }
 
-    nav ul { 
-        position: absolute; 
-        top: 60px; 
-        right: 0; 
-        width:100%; 
-        background: #020617; 
-        flex-direction: column; 
-        align-items: center; 
-        display: none; 
-        padding: 20px 0; 
-        gap: 15px; 
-    } 
+    nav ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #020617;
+
+        flex-direction: column;
+        align-items: center;
+
+        display: none;
+        padding: 20px 0;
+        gap: 15px;
+
+        z-index: 1000;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
 
     nav ul li {
-         list-style: none; 
-        } 
+        list-style: none;
+    }
 
-    nav a { 
-        padding: 10px; 
-        display: block; 
+    nav a {
+        padding: 12px;
+        display: block;
         width: 100%;
-        ;
-        text-align: center; 
-            } 
+        text-align: center;
+    }
+  
 
     /*contact fix in mobile*/ 
     .contact-container { 
