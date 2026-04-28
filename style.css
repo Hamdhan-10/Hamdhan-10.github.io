@@ -191,7 +191,7 @@ html {
 
     .menu-toggle {
         display: block;
-        z-index: 1000; 
+        z-index: 1001; 
     }
 
     nav ul {
