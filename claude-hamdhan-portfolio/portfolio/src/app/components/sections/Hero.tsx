@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
 import { IconBrandLinkedin, IconBrandGithub, IconBrandWhatsapp, IconDownload, IconArrowRight } from "@tabler/icons-react";
-import Link from "next/link";
+import Link from "next/link"  ;
  
 export default function Hero() {
   return (

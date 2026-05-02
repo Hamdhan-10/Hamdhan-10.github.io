@@ -1,16 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
-import LoadingScreen from "@/components/ui/LoadingScreen";
-import ScrollProgress from "@/components/ui/ScrollProgress";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
-import Hero from "@/components/sections/Hero";
-import About from "@/components/sections/About";
-import Projects from "@/components/sections/Projects";
-import Experience from "@/components/sections/Experience";
-import Startup from "@/components/sections/Startup";
-import BlogPreview from "@/components/sections/BlogPreview";
-import Contact from "@/components/sections/Contact";
+import LoadingScreen from "@/app/components/ui/LoadingScreen";
+import ScrollProgress from "@/app/components/ui/ScrollProgress";
+import Navbar from "@/app/components/layout/Navbar";
+import Footer from "@/app/components/layout/Footer";
+import Hero from "@/app/components/sections/Hero";
+import About from "@/app/components/sections/About";
+import Projects from "@/app/components/sections/Projects";
+import Experience from "@/app/components/sections/Experience";
+import Startup from "@/app/components/sections/Startup";
+import BlogPreview from "@/app/components/sections/BlogPreview";
+import Contact from "@/app/components/sections/Contact";
  
 export default function Home() {
   const [loading, setLoading] = useState(true);
