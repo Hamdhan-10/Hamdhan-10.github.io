@@ -201,7 +201,7 @@ export default function Hero() {
                 transition={{ duration: 15 + i * 5, repeat: Infinity, ease: "linear" }}
               />
             ))}
- 
+ </div>
             {/* Avatar circle */}
             <div
               className="relative w-48 h-48 rounded-full flex items-center justify-center text-5xl font-display font-bold text-white"
@@ -211,15 +211,17 @@ export default function Hero() {
               }}
             >
               MH
-              {/* Floating orbit dot */}
-              <motion.div
-                className="absolute w-4 h-4 rounded-full bg-blue-400"
-                style={{ top: 0, left: "50%", x: "-50%" }}
-                animate={{ rotate: 360 }}
-                transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
-                style={{ transformOrigin: "50% 96px" }}
-              />
-            </div>
+            <motion.div
+              className="absolute w-4 h-4 rounded-full bg-blue-400"
+              style={{
+                top: 0,
+                left: "50%",
+                transform: "translateX(-50%)",
+                transformOrigin: "50% 96px",
+           }}
+          animate={{ rotate: 360 }}
+         transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+/>
  
             {/* Floating tags */}
             {[
