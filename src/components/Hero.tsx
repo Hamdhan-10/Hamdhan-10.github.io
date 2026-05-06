@@ -21,7 +21,7 @@ export default function Hero() {
         >
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 text-blue-400 text-xs font-medium mb-8">
-            <Terminal size={14} /> 
+             
             <span>System Architecture & Development</span>
           </div>
 
@@ -35,12 +35,18 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-wrap gap-4 justify-center">
-            <button className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold flex items-center gap-2 transition-all hover:scale-105 active:scale-95 shadow-lg shadow-blue-500/20">
-              Explore Projects <ArrowRight size={18} />
-            </button>
-            <button className="px-8 py-4 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-xl font-bold transition-all flex items-center gap-2">
-              <Shield size={18} /> IT Services
-            </button>
+            <a
+              href='#projects'
+              className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-x1 font-bold flex items-center gap-2 transition-all hover-scale-105 active:scale-95 shadow-lg shadow-blue-500/20"
+              >
+                Explore Projects <ArrowRight size={18}/>
+              </a>
+            <a
+              href='#startup'
+              className="px-8 py-4 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-x1 font-bold transition-all flex items-center gap-2"
+              >
+                <Shield size={18} /> IT Services
+              </a> 
           </div>
         </motion.div>
       </div>

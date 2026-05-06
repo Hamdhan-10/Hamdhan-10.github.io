@@ -5,7 +5,7 @@ import { Code2, Cpu, Globe, Brain, Network } from "lucide-react";
 
 const skills = [
   { name: "Laravel", icon: <Code2 className="text-red-500" />, level: "90%" },
-  { name: "IoT & Automation", icon: <Cpu className="text-green-400" />, level: "85%" },
+  { name: "IoT & Automation", icon: <Cpu className="text-green-400" />, level: "70%" },
   { name: "IT Administration", icon: <Network className="text-blue-400" />, level: "95%" },
   { name: "Web Development", icon: <Globe className="text-cyan-400" />, level: "88%" },
   { name: "AI Basics", icon: <Brain className="text-purple-400" />, level: "75%" },
@@ -40,7 +40,7 @@ export default function About() {
 
             <div className="grid grid-cols-2 gap-4">
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10">
-                <h3 className="text-white font-bold text-2xl">2+</h3>
+                <h3 className="text-white font-bold text-2xl">1+</h3>
                 <p className="text-gray-500 text-sm font-semibold uppercase">Years Exp.</p>
               </div>
               <div className="p-4 rounded-2xl bg-white/5 border border-white/10">
