@@ -8,7 +8,7 @@ const skills = [
   { name: "IoT & Automation", icon: <Cpu className="text-green-400" />, level: "70%" },
   { name: "IT Administration", icon: <Network className="text-blue-400" />, level: "95%" },
   { name: "Web Development", icon: <Globe className="text-cyan-400" />, level: "88%" },
-  { name: "AI Basics", icon: <Brain className="text-purple-400" />, level: "75%" },
+  { name: "AI Basics", icon: <Brain className="text-purple-400" />, level: "85%" },
 ];
 
 export default function About() {

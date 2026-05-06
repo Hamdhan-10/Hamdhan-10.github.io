@@ -21,6 +21,7 @@ export default function Navbar() {
           <a href="#blogs" className="hover:text-white">Blogs</a>
           <a href="#experience" className="hover:text-white">Experience</a>
           <a href="#startup" className="hover:text-white">RH Solutions</a>
+          <a href="#cv" className="hover:text-white">CV</a>
           <a href="#contact" className="hover:text-white">Contact</a>
         </nav>
 
@@ -43,6 +44,7 @@ export default function Navbar() {
           <a href="#blogs" onClick={() => setOpen(false)}>Blogs</a>
           <a href="#experience" onClick={() => setOpen(false)}>Experience</a>
           <a href="#startup" onClick={() => setOpen(false)}>RH Solutions</a>
+          <a href="#cv" onClick={() => setOpen(false)}>CV</a>
           <a href="#contact" onClick={() => setOpen(false)}>Contact</a>
 
         </div>
